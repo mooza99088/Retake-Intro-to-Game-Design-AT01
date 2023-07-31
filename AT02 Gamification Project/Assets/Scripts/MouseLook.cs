@@ -88,4 +88,5 @@ public class MouseLook : MonoBehaviour
             Cursor.visible = !mouseLookActive;
         }
     }
+
 }
