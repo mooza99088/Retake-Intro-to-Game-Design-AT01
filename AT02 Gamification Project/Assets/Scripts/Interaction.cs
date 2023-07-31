@@ -15,10 +15,7 @@ public class Interaction : MonoBehaviour
     [Tooltip("Must reference the crosshair UI image.")]
     [SerializeField] private Image crosshair;
 
-    /// <summary>
-    /// The player's current waypoint.
-    /// </summary>
-    public NavigationWaypoint CurrentWaypoint { get; set; }
+    
     /// <summary>
     /// The player's currently active tooltip.
     /// </summary>
