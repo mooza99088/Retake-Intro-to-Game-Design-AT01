@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 614a3d8218d370d40895a63854c838b3, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c1c961cbd00909b45b34d97fd7df5cbf, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.006010039, g: 0.060162146, b: 0.19519308, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -159,7 +159,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &137863948
 MonoBehaviour:
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 25a737a5da215c14899a3c27e5b96adb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f231228a4093d64d946ce7f2642bfc3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -310,8 +310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb530aa567f8616408f56376654e4f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 8e9bce58b91a1814ba4a21c8da4fac08, type: 3}
-  background: {fileID: 21300000, guid: 25a737a5da215c14899a3c27e5b96adb, type: 3}
+  icon: {fileID: 21300000, guid: cab681e3d87b02245bb375f075276261, type: 3}
+  background: {fileID: 21300000, guid: 8f231228a4093d64d946ce7f2642bfc3, type: 3}
   interactClip: {fileID: 0}
 --- !u!114 &221627994
 MonoBehaviour:
@@ -829,7 +829,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 70
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -989,8 +989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb530aa567f8616408f56376654e4f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 53537e265e0931c42a9c68d36702bcd8, type: 3}
-  background: {fileID: 21300000, guid: 25a737a5da215c14899a3c27e5b96adb, type: 3}
+  icon: {fileID: 21300000, guid: cab681e3d87b02245bb375f075276261, type: 3}
+  background: {fileID: 21300000, guid: 8f231228a4093d64d946ce7f2642bfc3, type: 3}
   interactClip: {fileID: 0}
 --- !u!114 &637931841
 MonoBehaviour:
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 25a737a5da215c14899a3c27e5b96adb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f231228a4093d64d946ce7f2642bfc3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1376,7 +1376,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 70
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 25a737a5da215c14899a3c27e5b96adb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f231228a4093d64d946ce7f2642bfc3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2245,8 +2245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb530aa567f8616408f56376654e4f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 53537e265e0931c42a9c68d36702bcd8, type: 3}
-  background: {fileID: 21300000, guid: 25a737a5da215c14899a3c27e5b96adb, type: 3}
+  icon: {fileID: 21300000, guid: cab681e3d87b02245bb375f075276261, type: 3}
+  background: {fileID: 21300000, guid: 8f231228a4093d64d946ce7f2642bfc3, type: 3}
   interactClip: {fileID: 0}
 --- !u!114 &1664256507
 MonoBehaviour:
@@ -2763,7 +2763,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 70
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
