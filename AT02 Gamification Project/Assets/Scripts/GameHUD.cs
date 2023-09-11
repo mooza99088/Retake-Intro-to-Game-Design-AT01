@@ -46,5 +46,5 @@ public class GameHUD : MonoBehaviour
         return pauseMenu.activeSelf;
     }
 
-    
+   
 }

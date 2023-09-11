@@ -26,8 +26,5 @@ public class MainMenu : MonoBehaviour
     /// <summary>
     /// quits the game to the desktop.
     /// </summary>
-    public void QuitToDesktop()
-    {
-        Application.Quit();
-    }
+    
 }

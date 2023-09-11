@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     private GameHUD hud;
     private MouseLook mouseLook;
-    private bool gamePaused = false;
 
     private const int firstLevelIndex = 1;
     private static int nextSceneIndex = 1;
@@ -19,40 +18,17 @@ public class GameManager : MonoBehaviour
         mouseLook = FindObjectOfType<MouseLook>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        gamePaused = false;
-    }
+    
 
     // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Tab) == true)
-        {
-            TogglePauseGame();
-        }     
-    }
 
-    public void LoadMainMenu()
+    private void Update()
     {
-        Time.timeScale = 1;
-        nextSceneIndex = firstLevelIndex;
-        SceneManager.LoadScene(0);
-    }
-
-    public void TogglePauseGame()
-    {
-        gamePaused = hud.TogglePauseMenu();
-        mouseLook.MouseLookEnabled = !gamePaused;
-   
-        if(gamePaused == true)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
+            Application.Quit();
         }
     }
+
+
 }
