@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     private MouseLook mouseLook;
 
     private const int firstLevelIndex = 1;
-    private static int nextSceneIndex = 1;
+    
 
 
     private void Awake()

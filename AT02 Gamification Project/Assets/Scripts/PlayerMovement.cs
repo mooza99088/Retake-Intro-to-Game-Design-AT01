@@ -4,47 +4,56 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    private CharacterController characterController;
-    private Transform cameraTransform;
+    [SerializeField] private float gravity = 30f;
+    [SerializeField] private float defaultMoveSpeed = 3.5f;
+
+    private Vector3 motionStep;
+    private float velocity = 0f;
+    private float currentSpeed = 0f;
+    private CharacterController controller;
+
+
+    public bool CanMove { get; set; } = true;
+
+    private void Awake()
+    {
+        TryGetComponent(out controller);
+    }
 
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        currentSpeed = defaultMoveSpeed;
+    }
 
-        // Find the main camera in the scene and get its transform
-        cameraTransform = Camera.main.transform;
+    private void FixedUpdate()
+    {
+        if(CanMove == true)
+        {
+            if(controller.isGrounded == true)
+            {
+                velocity =-gravity * Time.deltaTime;
+            }
+            else
+            {
+                velocity -= gravity * Time.deltaTime;
+            }
+        }
     }
 
     void Update()
     {
-        // Get input from the player
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        ApplyMovement();
+    }
+    
 
-        // Calculate the movement direction relative to the camera
-        Vector3 moveDirection = cameraTransform.forward * verticalInput + cameraTransform.right * horizontalInput;
-        moveDirection.y = 0f; // Ensure the player stays grounded
-
-        // Normalize the movement direction to prevent diagonal movement from being faster
-        if (moveDirection.magnitude > 1f)
-        {
-            moveDirection.Normalize();
-        }
-
-        // Move the player using Character Controller
-        if (moveDirection.magnitude >= 0.1f)
-        {
-            // Apply movement speed and deltaTime for smooth movement
-            Vector3 moveVector = moveDirection * moveSpeed * Time.deltaTime;
-
-            // Rotate the player to match the camera's forward direction
-            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
-
-            // Use the Character Controller methods for movement
-            characterController.Move(moveVector);
-        }
+    private void ApplyMovement()
+    {
+        motionStep = Vector3.zero;
+        motionStep += transform.forward * Input.GetAxisRaw("Vertical");
+        motionStep += transform.right * Input.GetAxisRaw("Horizontal");
+        motionStep = currentSpeed * motionStep.normalized;
+        motionStep.y += velocity;
+        controller.Move(motionStep * Time.deltaTime);
     }
 }
 
