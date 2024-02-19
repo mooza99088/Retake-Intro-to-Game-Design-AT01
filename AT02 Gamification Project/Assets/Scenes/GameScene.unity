@@ -195,7 +195,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\rThis island cabin kitchen blends rustic \ncharm with modern comforts,
-    offering\nscenic views, a wooden island, a stone\nfireplace, and modern appliances.
+    offering\nscenic views, a marble island, a stone\nfireplace, and modern appliances.
     Ideal \nfor nature-loving cooks."
 --- !u!222 &36075070
 CanvasRenderer:
@@ -3068,9 +3068,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This island cabin bathroom radiates rustic elegance with its natural wood
-    accents, stone-tiled floors, and clawfoot bathtub, all while offering serene
-    island views for a relaxing retreat.
+  m_Text: This island cabin bathroom radiates modern elegance with its tiled floors
+    and open shower, all while offering serene island views for a relaxing retreat.
 --- !u!222 &990043576
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3857,11 +3856,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-    This island cabin bedroom is a tranquil retreat with rustic wood
-    furnishings, cozy linens, and stunning island views. Ideal for peaceful nights
-    in nature''s embrace.'
+  m_Text: This island cabin bedroom is a tranquil retreat with rustic wood furnishings,
+    cozy linens, and stunning island views. Ideal for peaceful nights in nature's
+    embrace.
 --- !u!222 &1466894917
 CanvasRenderer:
   m_ObjectHideFlags: 0
